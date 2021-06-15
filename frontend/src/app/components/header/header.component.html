@@ -1,0 +1,9 @@
+<header>
+  <h1>{{ title }}</h1>
+  
+  <app-date
+  *ngIf="hasRoute('/')"
+  (btnClick)="addDate($event)"
+></app-date>
+
+</header>
